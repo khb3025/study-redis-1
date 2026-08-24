@@ -17,7 +17,7 @@ import tools.jackson.databind.ext.javatime.deser.LocalDateTimeDeserializer;
 import tools.jackson.databind.ext.javatime.ser.LocalDateTimeSerializer;
 
 @Entity
-public class Board {
+public class Boards {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

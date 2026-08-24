@@ -25,3 +25,4 @@ DATE_SUB(NOW(), INTERVAL FLOOR(RAND() * 3650 + 1) DAY)
 FROM cte;
 
 select count(*) from boards;
+select * from boards;

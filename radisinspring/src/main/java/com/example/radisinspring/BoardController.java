@@ -20,7 +20,7 @@ public class BoardController {
     }
 
     @GetMapping()
-    public List<Board> getBoards(
+    public List<Boards> getBoards(
         @RequestParam(defaultValue = "1") Integer page,
         @RequestParam(defaultValue = "10") Integer size
     ) {

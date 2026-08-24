@@ -1,0 +1,15 @@
+spring:
+    profiles:
+        default: local
+
+    dataSource:
+        url: jdbc:mysql://localhost:3323/redis-1-db
+        username: redis
+        password: password
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+        

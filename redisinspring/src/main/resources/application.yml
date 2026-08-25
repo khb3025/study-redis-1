@@ -3,7 +3,7 @@ spring:
         default: local
 
     dataSource:
-        url: jdbc:mysql://localhost:3323/redis-1-db
+        url: jdbc:mysql://host.docker.internal:3323/redis-1-db
         username: redis
         password: password
         driver-class-name: com.mysql.cj.jdbc.Driver
@@ -15,7 +15,7 @@ spring:
     
     data:
         redis:
-            host: localhost
+            host: cache-server
             port: 6379
 
 logging:

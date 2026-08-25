@@ -1,0 +1,3 @@
+FROM eclipse-temurin:17-jdk
+COPY redisinspring/build/libs/*SNAPSHOT.jar app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]

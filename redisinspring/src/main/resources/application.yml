@@ -1,0 +1,49 @@
+spring:
+    profiles:
+        default: local
+
+    dataSource:
+        url: jdbc:mysql://localhost:3323/redis-1-db
+        username: redis
+        password: password
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+    
+    data:
+        redis:
+            host: localhost
+            port: 6379
+
+logging:
+    level:
+        org.springfaorwork.cache: debug
+
+---
+spring:
+    config:
+        activate:
+            on-profile: prod
+            
+    datasource:
+        url: jdbc:mysql://redis-learning-db.cx8u4i82c37m.ap-northeast-2.rds.amazonaws.com:3306/redis_learning_db
+        username: admin
+        password: password
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+        
+    data:
+        redis:
+            host: localhost
+            port: 6379
+
+logging:
+    level:
+        org.springfaorwork.cache: debug
